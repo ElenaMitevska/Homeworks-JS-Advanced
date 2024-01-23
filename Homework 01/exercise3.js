@@ -12,12 +12,6 @@
 
 // **URL:** https://swapi.dev/api/people/1 \
 
-// function printPerson(resultElement, response) {
-//   let resultList = document.getElementById("table").children;
-//   resultList.innerHTML = "";
-//   resultList.innerHTML = `<tr><th> Height</th> <th> Weight </th> <th> Eye Color </th> <th> Hair color </th> <tr> <td> ${response.height} </td> <td> ${response.mass} </td> <td> ${response.eye_color} </td> <td>${response.hair_color} </td> </tr>`;
-// }
-
 let button = document.getElementById("btn");
 let result = document.getElementById("table");
 
