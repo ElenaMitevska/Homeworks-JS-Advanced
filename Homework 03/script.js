@@ -117,54 +117,53 @@
 //   .then(function (response) {
 //     console.log(response);
 //     console.log(response.products);
-// let allLaptops = response.products
-//   .filter((response) => response.category.toLowerCase() === "laptops")
-//   .map((response) => response.price)
-//   .sort((a, b) => b.price - a.price);
-// console.log(allLaptops);
-// let firstGoceryItem = response.products.filter(
-//   (response) => response.category.toLowerCase() === "groceries"
-// )[0];
-// console.log(firstGoceryItem);
-// let firstSamsung = response.products.filter(       // ne mozam da ja resam
-//   (response) => response.category.toLowerCase() === "smartphones"
-// ).indexOf((response)=> response.brand === "Samsung");
-// console.log(firstSamsung);
-// console.log(indexOfFirstSamsung);
+//     let allLaptops = response.products
+//       .filter((response) => response.category.toLowerCase() === "laptops")
+//       .map((response) => response.price)
+//       .sort((a, b) => b.price - a.price);
+//     console.log(allLaptops);
+//     let firstGoceryItem = response.products.filter(
+//       (response) => response.category.toLowerCase() === "groceries"
+//     )[0];
+//     console.log(firstGoceryItem);
+//     let firstSamsung = response.products
+//       .filter((response) => response.category.toLowerCase() === "smartphones")
+//       .findIndex((response) => response.brand === "Samsung");
+//     console.log(firstSamsung);
 
-// let findSony = response.products.find(
-//   (response) => response.brand.toLowerCase() === "sony"
-// );
-// console.log(findSony);
-// let highestRatedSkincare = response.products
-//   .filter((response) => response.category.toLowerCase() === "skincare")
-//   .map((response) => response.rating)
-//   .sort((a, b) => b - a)[0];
-// console.log(highestRatedSkincare);
+//     let findSony = response.products.find(
+//       (response) => response.brand.toLowerCase() === "sony"
+//     );
+//     console.log(findSony);
+//     let highestRatedSkincare = response.products
+//       .filter((response) => response.category.toLowerCase() === "skincare")
+//       .map((response) => response.rating)
+//       .sort((a, b) => b - a)[0];
+//     console.log(highestRatedSkincare);
 
-// let discountPercentage = response.products
-//   .filter((response) => response.rating > 4.5)
-//   .map((response) => response.discountPercentage);
-// console.log(discountPercentage);
-// let discountPercentageAvg =
-//   discountPercentage.reduce((acc, curr) => acc + curr, 0) /
-//   discountPercentage.length;
-// console.log(discountPercentageAvg);
-// let highestPrice = response.products
-//   .map((response) => response.price)
-//   .sort((a, b) => b - a)[0];
-// console.log(highestPrice);
-// let priceOfIphone = response.products
-//   .filter((response) => response.title.includes("iPhone"))
-//   .map((response) => response.price);
-// console.log(priceOfIphone);
-// let avgPriceOfIphone =
-//   priceOfIphone.reduce((acc, curr) => acc + curr, 0) / priceOfIphone.length;
-// console.log(avgPriceOfIphone);
-// let lowestPriceProduct = response.products
-//   .map((response) => response.price)
-//   .sort((a, b) => a - b)[0];
-// console.log(lowestPriceProduct);
+//     let discountPercentage = response.products
+//       .filter((response) => response.rating > 4.5)
+//       .map((response) => response.discountPercentage);
+//     console.log(discountPercentage);
+//     let discountPercentageAvg =
+//       discountPercentage.reduce((acc, curr) => acc + curr, 0) /
+//       discountPercentage.length;
+//     console.log(discountPercentageAvg);
+//     let highestPrice = response.products
+//       .map((response) => response.price)
+//       .sort((a, b) => b - a)[0];
+//     console.log(highestPrice);
+//     let priceOfIphone = response.products
+//       .filter((response) => response.title.includes("iPhone"))
+//       .map((response) => response.price);
+//     console.log(priceOfIphone);
+//     let avgPriceOfIphone =
+//       priceOfIphone.reduce((acc, curr) => acc + curr, 0) / priceOfIphone.length;
+//     console.log(avgPriceOfIphone);
+//     let lowestPriceProduct = response.products
+//       .map((response) => response.price)
+//       .sort((a, b) => a - b)[0];
+//     console.log(lowestPriceProduct);
 //   })
 //   .catch(function (response) {
 //     console.log("The request has failed" + response.status);
